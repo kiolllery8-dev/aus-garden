@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>品牌名稱 | 精油品牌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF7F2;
+    --accent:#7A9E7E;
+    --accent-light:#A8C4AA;
+    --text:#2C2C2C;
+    --muted:#8B8B8B;
+    --line:#E8E4DC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Noto Sans TC',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    font-weight:400;
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+
+  /* ====== 佔位色塊 ====== */
+  .placeholder{
+    background:linear-gradient(135deg,var(--accent-light) 0%,var(--accent) 100%);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:14px;letter-spacing:2px;
+  }
+  .placeholder.light{
+    background:linear-gradient(135deg,#E8E4DC 0%,#D4CFC2 100%);
+    color:#8B8B8B;
+  }
+
+  /* ====== Header ====== */
+  .top-bar{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:10px 0;
+    font-size:13px;
+  }
+  .top-bar-inner{
+    max-width:1200px;margin:0 auto;padding:0 20px;
+    display:flex;justify-content:flex-end;align-items:center;gap:18px;
+    color:var(--muted);
+  }
+  .top-bar a{transition:color .2s;}
+  .top-bar a:hover{color:var(--accent);}
+
+  header.main-header{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:100;
+  }
+  .header-inner{
+    max-width:1200px;margin:0 auto;padding:18px 20px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-size:20px;font-weight:700;letter-spacing:4px;
+    color:var(--text);
+  }
+  .logo small{display:block;font-size:10px;letter-spacing:3px;color:var(--muted);font-weight:400;margin-top:2px;}
+
+  nav.primary ul{display:flex;gap:28px;}
+  nav.primary a{
+    font-size:14px;color:var(--text);
+    padding:6px 0;position:relative;transition:color .2s;
+  }
+  nav.primary a:hover{color:var(--accent);}
+  nav.primary a::after{
+    content:'';position:absolute;left:0;bottom:0;width:0;height:2px;
+    background:var(--accent);transition:width .3s;
+  }
+  nav.primary a:hover::after{width:100%;}
+
+  .header-icons{display:flex;gap:16px;align-items:center;color:var(--muted);}
+  .header-icons span{cursor:pointer;font-size:14px;}
+
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;font-size:24px;}
+
+  /* ====== Hero ====== */
+  .hero{
+    height:520px;
+    background:linear-gradient(135deg,#D4E5D6 0%,#A8C4AA 50%,#7A9E7E 100%);
+    position:relative;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hero-content{
+    text-align:center;color:#fff;padding:0 20px;
+    text-shadow:0 2px 10px rgba(0,0,0,.1);
+  }
+  .hero h1{
+    font-size:72px;font-weight:700;letter-spacing:12px;
+    line-height:1.3;margin-bottom:20px;
+    writing-mode:vertical-rl;
+    display:inline-block;height:300px;
+  }
+  .hero-sub{font-size:18px;letter-spacing:4px;margin-top:10px;opacity:.9;}
+
+  /* ====== Banner 雙欄 ====== */
+  .banner-row{
+    max-width:1200px;margin:60px auto;padding:0 20px;
+    display:grid;grid-template-columns:1fr 1fr;gap:20px;
+  }
+  .banner{
+    height:220px;border-radius:8px;overflow:hidden;
+    transition:transform .3s;cursor:pointer;
+  }
+  .banner:hover{transform:translateY(-4px);}
+
+  /* ====== Section 標題 ====== */
+  .section-title{
+    text-align:center;
+    font-size:24px;font-weight:500;
+    margin:60px 0 40px;
+    color:var(--text);letter-spacing:2px;
+  }
+
+  /* ====== 產品網格 ====== */
+  .products{max-width:1200px;margin:0 auto;padding:0 20px;}
+  .product-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+    margin-bottom:40px;
+  }
+  .product-card{
+    background:#fff;border-radius:8px;overflow:hidden;
+    transition:box-shadow .3s,transform .3s;cursor:pointer;
+  }
+  .product-card:hover{
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transform:translateY(-4px);
+  }
+  .product-img{height:240px;}
+  .product-info{padding:16px;text-align:center;}
+  .product-name{font-size:14px;margin-bottom:8px;color:var(--text);}
+  .product-price{font-size:15px;color:var(--accent);font-weight:500;}
+  .product-price del{color:var(--muted);font-weight:400;margin-right:6px;}
+
+  /* ====== 品牌特色（四欄） ====== */
+  .features{
+    background:#fff;padding:60px 20px;margin:60px 0;
+  }
+  .features-inner{max-width:1200px;margin:0 auto;}
+  .features-title{text-align:center;font-size:22px;margin-bottom:40px;letter-spacing:2px;}
+  .feature-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:30px;
+  }
+  .feature-item{text-align:center;}
+  .feature-icon{
+    width:80px;height:80px;margin:0 auto 16px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#F0EBE0 0%,#D4CFC2 100%);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--accent);font-size:12px;
+  }
+  .feature-name{font-size:16px;font-weight:500;margin-bottom:6px;}
+  .feature-desc{font-size:13px;color:var(--muted);}
+
+  /* ====== 品牌故事左右欄 ====== */
+  .story{
+    max-width:1200px;margin:60px auto;padding:0 20px;
+    display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  }
+  .story-card{
+    height:200px;border-radius:12px;overflow:hidden;
+    position:relative;cursor:pointer;
+    transition:transform .3s;
+  }
+  .story-card:hover{transform:translateY(-4px);}
+  .story-card-1{background:linear-gradient(135deg,#F0EBE0 0%,#D4CFC2 100%);}
+  .story-card-2{background:linear-gradient(135deg,#D4E5D6 0%,#A8C4AA 100%);}
+  .story-card-content{
+    padding:30px;display:flex;flex-direction:column;justify-content:center;height:100%;
+  }
+  .story-card-1 .story-card-content{color:var(--text);}
+  .story-card-2 .story-card-content{color:#fff;}
+  .story-card h3{font-size:20px;margin-bottom:10px;letter-spacing:2px;}
+  .story-card p{font-size:14px;margin-bottom:16px;opacity:.85;}
+  .story-btn{
+    display:inline-block;padding:8px 20px;
+    border:1px solid currentColor;border-radius:20px;
+    font-size:13px;width:fit-content;
+    transition:background .2s;
+  }
+  .story-btn:hover{background:rgba(255,255,255,.2);}
+
+  /* ====== Footer ====== */
+  footer{
+    background:#fff;border-top:1px solid var(--line);
+    padding:60px 20px 30px;margin-top:60px;
+  }
+  .footer-inner{
+    max-width:1200px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:40px;
+  }
+  .footer-col h4{font-size:15px;margin-bottom:18px;letter-spacing:2px;color:var(--text);}
+  .footer-col ul li{font-size:13px;color:var(--muted);margin-bottom:10px;}
+  .footer-col ul li a:hover{color:var(--accent);}
+  .footer-col p{font-size:13px;color:var(--muted);margin-bottom:8px;}
+  .social-icons{display:flex;gap:12px;margin-top:12px;}
+  .social-icons span{
+    width:36px;height:36px;border-radius:50%;
+    background:var(--bg);display:flex;align-items:center;justify-content:center;
+    font-size:14px;color:var(--accent);cursor:pointer;
+    transition:background .2s;
+  }
+  .social-icons span:hover{background:var(--accent);color:#fff;}
+
+  .payment{
+    max-width:1200px;margin:40px auto 0;padding-top:24px;
+    border-top:1px solid var(--line);
+    display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  }
+  .payment .placeholder{
+    width:50px;height:30px;font-size:10px;border-radius:4px;
+  }
+  .copyright{
+    text-align:center;color:var(--muted);font-size:12px;
+    margin-top:24px;
+  }
+
+  /* ====== RWD ====== */
+  @media (max-width:960px){
+    nav.primary{display:none;}
+    .menu-toggle{display:block;}
+    .hero{height:400px;}
+    .hero h1{font-size:56px;letter-spacing:8px;height:240px;}
+    .banner-row{grid-template-columns:1fr;}
+    .product-grid{grid-template-columns:repeat(2,1fr);gap:16px;}
+    .product-img{height:180px;}
+    .feature-grid{grid-template-columns:repeat(2,1fr);gap:24px;}
+    .story{grid-template-columns:1fr;}
+    .footer-inner{grid-template-columns:repeat(2,1fr);gap:30px;}
+    .top-bar-inner{justify-content:center;gap:12px;font-size:12px;}
+  }
+  @media (max-width:480px){
+    .hero{height:340px;}
+    .hero h1{font-size:42px;letter-spacing:6px;height:180px;}
+    .hero-sub{font-size:14px;}
+    .product-grid{grid-template-columns:1fr 1fr;gap:12px;}
+    .product-img{height:150px;}
+    .feature-grid{grid-template-columns:1fr 1fr;}
+    .footer-inner{grid-template-columns:1fr;}
+    .section-title{font-size:20px;margin:40px 0 24px;}
+    .header-inner{padding:14px 16px;}
+    .logo{font-size:16px;letter-spacing:2px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- 頂部資訊列 -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="#">幣別切換</a>
+    <a href="#">繁體中文</a>
+    <a href="#">搜尋</a>
+    <a href="#">會員</a>
+    <a href="#">購物車</a>
+  </div>
+</div>
+
+<!-- 主導覽 Header -->
+<header class="main-header">
+  <div class="header-inner">
+    <div class="logo">
+      品牌 LOGO
+      <small>BRAND TAGLINE HERE</small>
+    </div>
+    <nav class="primary">
+      <ul>
+        <li><a href="#">最新活動</a></li>
+        <li><a href="#">關於品牌</a></li>
+        <li><a href="#">精油學院課程</a></li>
+        <li><a href="#">居家清潔精油</a></li>
+        <li><a href="#">精油系列商品</a></li>
+        <li><a href="#">專業知識庫</a></li>
+        <li><a href="#">藝術合作</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="選單">☰</button>
+  </div>
+</header>
+
+<!-- Hero 主視覺 -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>主視覺標語</h1>
+    <div class="hero-sub">Main Visual Subtitle Here</div>
+  </div>
+</section>
+
+<!-- Banner 雙欄 -->
+<div class="banner-row">
+  <div class="banner placeholder">最新商品 Banner</div>
+  <div class="banner placeholder light">最新課程 Banner</div>
+</div>
+
+<!-- 分類列 / 產品四欄 -->
+<section class="products">
+  <h2 class="section-title">精油系列商品</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 1</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱一・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 2</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱二・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 3</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱三・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 4</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱四・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 5</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱五・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 6</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱六・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 7</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱七・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder">產品圖片 8</div>
+      <div class="product-info">
+        <div class="product-name">產品名稱八・副標題</div>
+        <div class="product-price">NT$1,480</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-img placeholder light">禮盒商品</div>
+      <div class="product-info">
+        <div class="product-name">禮盒組合商品</div>
+        <div class="product-price"><del>NT$3,400</del> NT$1,800</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder light">噴霧商品一</div>
+      <div class="product-info">
+        <div class="product-name">天然清潔噴霧</div>
+        <div class="product-price">NT$490</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder light">噴霧商品二</div>
+      <div class="product-info">
+        <div class="product-name">精油抗菌噴霧</div>
+        <div class="product-price">NT$390</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img placeholder light">噴霧商品三</div>
+      <div class="product-info">
+        <div class="product-name">舒緩香氛噴霧</div>
+        <div class="product-price">NT$450</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌特色四欄 -->
+<section class="features">
+  <div class="features-inner">
+    <h2 class="features-title">品牌專業團隊把關每一支精油，讓消費者用得安心</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">ICON 1</div>
+        <div class="feature-name">品牌特色一</div>
+        <div class="feature-desc">說明文字一行</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">ICON 2</div>
+        <div class="feature-name">品牌特色二</div>
+        <div class="feature-desc">說明文字一行</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">ICON 3</div>
+        <div class="feature-name">品牌特色三</div>
+        <div class="feature-desc">說明文字一行</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">ICON 4</div>
+        <div class="feature-name">品牌特色四</div>
+        <div class="feature-desc">說明文字一行</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌故事左右欄 -->
+<section class="story">
+  <div class="story-card story-card-1">
+    <div class="story-card-content">
+      <h3>精油百科</h3>
+      <p>精油部落格文章，如何正確挑選精油？讓您更懂得用好精油。</p>
+      <a href="#" class="story-btn">立即前往</a>
+    </div>
+  </div>
+  <div class="story-card story-card-2">
+    <div class="story-card-content">
+      <h3>品牌的永續旅程</h3>
+      <p>用百分之百天然植物，描繪出更美好的生活。邀您一同看見更多永續發展建議。</p>
+      <a href="#" class="story-btn">點擊了解</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer 四欄 -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>FIND US</h4>
+      <p>週一至週五 10am–6pm</p>
+      <p>Tel：+886-0-0000-0000</p>
+      <p>Email：marketing@brand.com.tw</p>
+      <p>地址：某市某區某路 00 號</p>
+    </div>
+    <div class="footer-col">
+      <h4>CUSTOMER SERVICE</h4>
+      <ul>
+        <li><a href="#">購物流程說明</a></li>
+        <li><a href="#">會員註冊登入</a></li>
+        <li><a href="#">商品運送說明</a></li>
+        <li><a href="#">付款方式說明</a></li>
+        <li><a href="#">退換貨須知</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>ABOUT BRAND</h4>
+      <ul>
+        <li><a href="#">品牌介紹</a></li>
+        <li><a href="#">最新消息</a></li>
+        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#">媒體合作</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>#BRAND HASHTAG</h4>
+      <p>標語說明一行放在這裡，傳達品牌精神或活動訊息。</p>
+      <div class="social-icons">
+        <span>f</span>
+        <span>IG</span>
+        <span>YT</span>
+        <span>LN</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment">
+    <div class="placeholder">VISA</div>
+    <div class="placeholder">MC</div>
+    <div class="placeholder">JCB</div>
+    <div class="placeholder">AE</div>
+    <div class="placeholder">7-11</div>
+    <div class="placeholder">LINE</div>
+  </div>
+
+  <div class="copyright">
+    © 2026 品牌名稱 Brand Name. All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+  // 手機選單切換（簡易版）
+  const menuToggle = document.querySelector('.menu-toggle');
+  const primaryNav = document.querySelector('nav.primary');
+  menuToggle?.addEventListener('click',()=>{
+    if(primaryNav.style.display==='block'){
+      primaryNav.style.display='';
+    }else{
+      primaryNav.style.display='block';
+      primaryNav.style.position='absolute';
+      primaryNav.style.top='100%';
+      primaryNav.style.left='0';
+      primaryNav.style.right='0';
+      primaryNav.style.background='#fff';
+      primaryNav.style.padding='20px';
+      primaryNav.style.borderBottom='1px solid var(--line)';
+      primaryNav.querySelector('ul').style.flexDirection='column';
+      primaryNav.querySelector('ul').style.gap='14px';
+    }
+  });
+</script>
+
+</body>
+</html>
