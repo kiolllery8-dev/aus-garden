@@ -31,8 +31,22 @@ export default function CoursesPage() {
             <h2 className="text-2xl md:text-3xl text-forest mb-8">{cat.label}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {list.map((c) => (
-                <article key={c.slug} className="bg-white/70 rounded-2xl overflow-hidden border hairline">
-                  <div className={`aspect-[4/3] bg-gradient-to-br ${c.cover}`} />
+                <article key={c.slug} className="bg-white rounded-2xl overflow-hidden border hairline hover:shadow-lg transition">
+                  <div className={`relative aspect-[4/3] bg-gradient-to-br ${c.cover} overflow-hidden`}>
+                    <span className="absolute top-4 left-4 text-[11px] tracking-widest bg-cream/90 text-forest px-3 py-1 rounded-full">
+                      {c.category}
+                    </span>
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      <div className="w-20 h-20 rounded-full bg-forest/80 flex items-center justify-center">
+                        <div className="w-14 h-14 rounded-full bg-moss flex items-center justify-center">
+                          <div className="w-7 h-7 rounded-full bg-clay" />
+                        </div>
+                      </div>
+                    </div>
+                    <span className="absolute bottom-4 right-4 font-serif text-cream text-lg tracking-widest">
+                      AUS GARDEN
+                    </span>
+                  </div>
                   <div className="p-6">
                     <h3 className="text-xl text-forest">{c.title}</h3>
                     <p className="mt-2 text-xs text-ink/60">{c.duration}</p>

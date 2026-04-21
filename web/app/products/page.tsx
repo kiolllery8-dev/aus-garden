@@ -62,8 +62,8 @@ export default function ProductsPage() {
             const price = priceNumber(p);
             const name = displayName(p);
             return (
-              <article key={p.code} className="group bg-white/70 rounded-2xl overflow-hidden border hairline hover:shadow-lg transition">
-                <div className="relative aspect-square bg-cream">
+              <article key={p.code} className="group bg-white rounded-2xl overflow-hidden border hairline hover:shadow-lg transition">
+                <div className="relative aspect-square bg-gradient-to-br from-sand/60 via-cream to-cream">
                   {p.image ? (
                     <Image
                       src={`${BP}/${p.image}`}
@@ -73,7 +73,9 @@ export default function ProductsPage() {
                       className="object-contain p-4 group-hover:scale-105 transition duration-500"
                     />
                   ) : (
-                    <div className="absolute inset-0 flex items-center justify-center text-ink/30 text-xs">無圖</div>
+                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-sand to-moss/20 text-forest text-xs tracking-widest">
+                      AUS GARDEN
+                    </div>
                   )}
                 </div>
                 <div className="p-4">

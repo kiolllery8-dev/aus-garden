@@ -113,7 +113,7 @@ export default function HomePage() {
             const price = priceNumber(p);
             return (
               <article key={p.code} className="group">
-                <div className="relative aspect-square rounded-2xl bg-white/70 border hairline overflow-hidden">
+                <div className="relative aspect-square rounded-2xl bg-gradient-to-br from-sand/60 via-cream to-cream border hairline overflow-hidden">
                   {p.image && (
                     <Image
                       src={`${BP}/${p.image}`}
