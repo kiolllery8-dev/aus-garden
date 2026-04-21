@@ -1,9 +1,15 @@
 import Link from 'next/link';
-import { courses, products } from '@/lib/data';
+import Image from 'next/image';
+import { courses, products, displayName, priceNumber } from '@/lib/data';
+
+const BP = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function HomePage() {
   const featuredCourses = courses.slice(0, 4);
-  const featuredProducts = products.slice(0, 4);
+  // Featured = products with image + priced, take 4 highlights
+  const featuredProducts = products
+    .filter((p) => p.image && priceNumber(p))
+    .slice(0, 4);
 
   return (
     <>
@@ -103,22 +109,29 @@ export default function HomePage() {
           <Link href="/products" className="text-sm text-moss hover:underline">所有商品 →</Link>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredProducts.map((p) => (
-            <article key={p.slug} className="group">
-              <div className={`relative aspect-square rounded-2xl bg-gradient-to-br ${p.cover} overflow-hidden`}>
-                {p.tag && (
-                  <span className="absolute top-4 left-4 text-[11px] tracking-widest bg-forest text-cream px-3 py-1 rounded-full">
-                    {p.tag}
-                  </span>
-                )}
-              </div>
-              <div className="mt-4">
-                <h3 className="text-base text-forest">{p.name}</h3>
-                <p className="text-xs text-ink/60 mt-1">{p.subtitle}</p>
-                <p className="text-sm text-moss mt-2">NT$ {p.price.toLocaleString()}</p>
-              </div>
-            </article>
-          ))}
+          {featuredProducts.map((p) => {
+            const price = priceNumber(p);
+            return (
+              <article key={p.code} className="group">
+                <div className="relative aspect-square rounded-2xl bg-white/70 border hairline overflow-hidden">
+                  {p.image && (
+                    <Image
+                      src={`${BP}/${p.image}`}
+                      alt={displayName(p)}
+                      fill
+                      sizes="(max-width:768px) 50vw, 25vw"
+                      className="object-contain p-6 group-hover:scale-105 transition duration-500"
+                    />
+                  )}
+                </div>
+                <div className="mt-4">
+                  <p className="text-[10px] tracking-widest text-clay">{p.code}</p>
+                  <h3 className="text-base text-forest mt-1 line-clamp-2">{displayName(p)}</h3>
+                  {price && <p className="text-sm text-moss mt-2">NT$ {price.toLocaleString()}</p>}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
