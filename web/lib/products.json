@@ -13,7 +13,7 @@
     "notes": "不可直接塗抹皮膚需稀釋；嬰幼兒0~3歲不建議；孕婦使用前諮詢醫師；遠離火源（低燃點）；避免接觸眼睛",
     "category": "精油類",
     "folder": "A30100_薰衣草精油(保加利亞)A30005-A30050",
-    "image": "products/A30100.png"
+    "image": "products/A30100.jpg"
   },
   {
     "code": "A212",
@@ -29,10 +29,10 @@
     "notes": "孕婦嬰幼兒高血壓癲癇患者使用前諮詢；精油低燃點遠離火源；保存期限3年",
     "category": "其他",
     "folder": "A212_聖約翰草浸泡油",
-    "image": "products/A212.png"
+    "image": "products/A212.jpg"
   },
   {
-    "code": "A330",
+    "code": "A33050",
     "series": "綿羊乳霜/精油/身體乳",
     "fullName": "【澳思萊AUS LIFE】薰衣草舒緩護手霜 75ml",
     "shortName": "薰衣草舒緩護手霜",
@@ -45,7 +45,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇患者使用前諮詢；保存期限3年",
     "category": "精油類",
     "folder": "A33050_檸檬精油",
-    "image": "products/A33050.png"
+    "image": "products/A33050.jpg"
   },
   {
     "code": "A703",
@@ -61,7 +61,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇患者使用前諮詢；精油低燃點遠離火源；敏感肌可先加基底油調和；保存期限3年",
     "category": "精油類",
     "folder": "A703_運動健身按摩油",
-    "image": "products/A703.png"
+    "image": "products/A703.jpg"
   },
   {
     "code": "A203",
@@ -77,7 +77,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇患者使用前諮詢；精油低燃點遠離火源；保存期限3年",
     "category": "精油類",
     "folder": "A203_薰衣草迷迭香按摩精油",
-    "image": "products/A203.png"
+    "image": "products/A203.jpg"
   },
   {
     "code": "A202",
@@ -93,7 +93,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇患者使用前諮詢；精油低燃點遠離火源；保存期限3年",
     "category": "精油類",
     "folder": "A202_玫瑰果按摩精油",
-    "image": "products/A202.png"
+    "image": "products/A202.jpg"
   },
   {
     "code": "A200",
@@ -109,7 +109,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇患者使用前諮詢；精油低燃點遠離火源；保存期限3年",
     "category": "精油類",
     "folder": "A200_檸檬葡萄柚按摩精油",
-    "image": "products/A200.png"
+    "image": "products/A200.jpg"
   },
   {
     "code": "A2013",
@@ -125,7 +125,7 @@
     "notes": "日間使用後必須搭配防曬；先手臂內側過敏測試；開封後6個月內使用完畢；保存期限3年",
     "category": "其他",
     "folder": "A2013_玫瑰果油",
-    "image": "products/A2013.png"
+    "image": "products/A2013.jpg"
   },
   {
     "code": "A16016",
@@ -141,10 +141,10 @@
     "notes": "定價NT$750售價NT$560；保存5年；30℃以下乾燥陰涼處；孕期哺乳期使用前諮詢；勿未稀釋直接塗抹皮膚；品號A16016 | 產地：澳洲",
     "category": "精油類",
     "folder": "A16016_玫瑰草精油",
-    "image": "products/A16016.png"
+    "image": "products/A16016.jpg"
   },
   {
-    "code": "A35",
+    "code": "A35050",
     "series": "居家清潔/保養",
     "fullName": "【澳思萊AUS LIFE】澳洲羊毛撢子(小) A35-高級訂製 珍貴羊毛製",
     "shortName": "澳洲羊毛撢子(小)",
@@ -157,7 +157,7 @@
     "notes": "不可水洗不可漂白；輕拍清灰塵 | 產地：澳洲",
     "category": "精油類",
     "folder": "A35050_粉紅葡萄柚精油",
-    "image": "products/A35050.png"
+    "image": "products/A35050.jpg"
   },
   {
     "code": "A15316",
@@ -173,7 +173,7 @@
     "notes": "⚠️效果強烈酚類精油非日常使用精油、孕婦嬰幼兒哺乳期及特定健康狀況者使用前必須諮詢專業人士、局部外用須稀釋1%以下先做過敏測試、勿原液接觸皮膚；品號A15316；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A15316_牛至精油",
-    "image": "products/A15316.png"
+    "image": "products/A15316.jpg"
   },
   {
     "code": "A15216",
@@ -189,7 +189,7 @@
     "notes": "定價NT$1880/售價NT$1580；保存5年；置室內陰涼孩童無法碰觸處；異常時停止使用洽專業醫藥師 | 產地：澳洲",
     "category": "精油類",
     "folder": "A15216_沒藥精油",
-    "image": "products/A15216.png"
+    "image": "products/A15216.jpg"
   },
   {
     "code": "A15116",
@@ -205,7 +205,7 @@
     "notes": "效果強烈需稀釋使用；孕婦嬰幼兒使用前諮詢；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A15116_肉桂精油",
-    "image": "products/A15116.png"
+    "image": "products/A15116.jpg"
   },
   {
     "code": "A14816",
@@ -221,7 +221,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；保存5年；見商品標示 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14816_杜松槳果精油",
-    "image": "products/A14816.png"
+    "image": "products/A14816.jpg"
   },
   {
     "code": "A14716",
@@ -237,7 +237,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；需稀釋後使用；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14716_薑精油",
-    "image": "products/A14716.png"
+    "image": "products/A14716.jpg"
   },
   {
     "code": "A14516",
@@ -253,7 +253,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；需稀釋後使用；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14516_絲柏精油",
-    "image": "products/A14516.png"
+    "image": "products/A14516.jpg"
   },
   {
     "code": "A14416",
@@ -269,7 +269,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14416_岩蘭草精油",
-    "image": "products/A14416.png"
+    "image": "products/A14416.jpg"
   },
   {
     "code": "A14216",
@@ -285,7 +285,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；需稀釋後使用；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14216_馬鬱蘭精油",
-    "image": "products/A14216.png"
+    "image": "products/A14216.jpg"
   },
   {
     "code": "A14116",
@@ -301,7 +301,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；需稀釋後使用；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14116_快樂鼠尾草精油",
-    "image": "products/A14116.png"
+    "image": "products/A14116.jpg"
   },
   {
     "code": "A14016",
@@ -317,7 +317,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；保存5年 | 產地：澳洲",
     "category": "精油類",
     "folder": "A14016_廣藿香精油",
-    "image": "products/A14016.png"
+    "image": "products/A14016.jpg"
   },
   {
     "code": "A71035",
@@ -333,7 +333,7 @@
     "notes": "⚠️效果強烈需大量稀釋；孕婦嬰幼兒嚴禁使用；阿斯匹林過敏者禁用；勿原液接觸皮膚；保存5年 | 產地：澳洲 | 品號A71035規格35g",
     "category": "精油類",
     "folder": "A71035_冬青精油",
-    "image": "products/A71035.png"
+    "image": "products/A71035.jpg"
   },
   {
     "code": "A40050",
@@ -349,7 +349,7 @@
     "notes": "⚠️具光敏性：用於肌膚時白天請避免日曬；未稀釋勿直接塗抹肌膚；遠離火源及孩童；NT$800",
     "category": "精油類",
     "folder": "A40050_萊姆精油",
-    "image": "products/A40050.png"
+    "image": "products/A40050.jpg"
   },
   {
     "code": "A61030",
@@ -365,7 +365,7 @@
     "notes": "⚠️蠶豆症患者勿使用或先諮詢；外用非食品；孕婦嬰幼兒使用前諮詢；遠離火源 | NT$420",
     "category": "精油類",
     "folder": "A61030_薄荷精油",
-    "image": "products/A61030.png"
+    "image": "products/A61030.jpg"
   },
   {
     "code": "A62100",
@@ -381,7 +381,7 @@
     "notes": "精油燃點低遠離火源；孕婦嬰幼兒使用前諮詢；30℃以下乾燥陰涼保存 | NT$1,280",
     "category": "精油類",
     "folder": "A62100_經典薰衣草A62050",
-    "image": "products/A62100.png"
+    "image": "products/A62100.jpg"
   },
   {
     "code": "A63100",
@@ -397,7 +397,7 @@
     "notes": "精油燃點低遠離火源；孕婦嬰幼兒使用前諮詢；30℃以下保存 | NT$1,250",
     "category": "精油類",
     "folder": "A63100_醒目薰衣草A63050",
-    "image": "products/A63100.png"
+    "image": "products/A63100.jpg"
   },
   {
     "code": "A26050",
@@ -413,7 +413,7 @@
     "notes": "高濃度避免未稀釋大量接觸肌膚；孕婦嬰幼兒使用前諮詢；置陰涼乾燥處保存 | NT$800",
     "category": "精油類",
     "folder": "A26050_甜茴香精油",
-    "image": "products/A26050.png"
+    "image": "products/A26050.jpg"
   },
   {
     "code": "A27050",
@@ -429,7 +429,7 @@
     "notes": "敏感膚質先局部測試；孕婦嬰幼兒使用前諮詢；置陰涼乾燥處保存 | NT$800",
     "category": "精油類",
     "folder": "A27050_大西洋雪松精油",
-    "image": "products/A27050.png"
+    "image": "products/A27050.jpg"
   },
   {
     "code": "A28050",
@@ -445,7 +445,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇使用前諮詢；遠離火源；置陰涼乾燥處保存 | NT$800",
     "category": "精油類",
     "folder": "A28050_羅勒精油",
-    "image": "products/A28050.png"
+    "image": "products/A28050.jpg"
   },
   {
     "code": "A31050",
@@ -461,7 +461,7 @@
     "notes": "孕婦嬰幼兒高血壓癲癇使用前諮詢；遠離火源；置陰涼乾燥處保存 | NT$800",
     "category": "精油類",
     "folder": "A31050_迷迭香精油",
-    "image": "products/A31050.png"
+    "image": "products/A31050.jpg"
   },
   {
     "code": "A36050",
@@ -477,7 +477,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；遠離火源高溫；置陰涼乾燥處保存 | NT$800",
     "category": "精油類",
     "folder": "A36050_甜橙精油",
-    "image": "products/A36050.png"
+    "image": "products/A36050.jpg"
   },
   {
     "code": "A37050",
@@ -493,7 +493,7 @@
     "notes": "孕婦嬰幼兒使用前諮詢；敏感肌先局部測試；遠離火源；置陰涼乾燥處保存 | NT$800",
     "category": "精油類",
     "folder": "A37050_檸檬香茅精油",
-    "image": "products/A37050.png"
+    "image": "products/A37050.jpg"
   },
   {
     "code": "A207",
@@ -509,7 +509,7 @@
     "notes": null,
     "category": "其他",
     "folder": "A207_澳洲精純甜杏仁油",
-    "image": "products/A207.png"
+    "image": "products/A207.jpg"
   },
   {
     "code": "A210",
@@ -525,7 +525,7 @@
     "notes": null,
     "category": "其他",
     "folder": "A210_頂級分餾椰子油",
-    "image": "products/A210.png"
+    "image": "products/A210.jpg"
   },
   {
     "code": "A216",
@@ -541,7 +541,7 @@
     "notes": null,
     "category": "其他",
     "folder": "A216_頂級荷荷芭精粹油",
-    "image": "products/A216.png"
+    "image": "products/A216.jpg"
   },
   {
     "code": "A220",
@@ -557,7 +557,7 @@
     "notes": null,
     "category": "其他",
     "folder": "A220_杏桃核仁油",
-    "image": "products/A220.png"
+    "image": "products/A220.jpg"
   },
   {
     "code": "A14316",
@@ -573,7 +573,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A14316_佛手柑精油",
-    "image": "products/A14316.png"
+    "image": "products/A14316.jpg"
   },
   {
     "code": "A14616",
@@ -589,7 +589,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A14616_乳香精油",
-    "image": "products/A14616.png"
+    "image": "products/A14616.jpg"
   },
   {
     "code": "A14916",
@@ -605,7 +605,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A14916_肉桂葉精油",
-    "image": "products/A14916.png"
+    "image": "products/A14916.jpg"
   },
   {
     "code": "A15016",
@@ -621,7 +621,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A15016_印度乳香精油",
-    "image": "products/A15016.png"
+    "image": "products/A15016.jpg"
   },
   {
     "code": "A16216",
@@ -637,7 +637,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A16216_丁香精油",
-    "image": "products/A16216.png"
+    "image": "products/A16216.jpg"
   },
   {
     "code": "A16516",
@@ -653,7 +653,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A16516_黑雲杉精油",
-    "image": "products/A16516.png"
+    "image": "products/A16516.jpg"
   },
   {
     "code": "A16616",
@@ -669,7 +669,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A16616_百里香(紅)精油",
-    "image": "products/A16616.png"
+    "image": "products/A16616.jpg"
   },
   {
     "code": "A16716",
@@ -685,7 +685,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A16716_依蘭精油",
-    "image": "products/A16716.png"
+    "image": "products/A16716.jpg"
   },
   {
     "code": "A16816",
@@ -701,7 +701,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A16816_德國洋甘菊精油",
-    "image": "products/A16816.png"
+    "image": "products/A16816.jpg"
   },
   {
     "code": "A17016",
@@ -717,7 +717,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A17016_天竺葵精油",
-    "image": "products/A17016.png"
+    "image": "products/A17016.jpg"
   },
   {
     "code": "A17216",
@@ -733,7 +733,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A17216_阿米香樹精油",
-    "image": "products/A17216.png"
+    "image": "products/A17216.jpg"
   },
   {
     "code": "A17316",
@@ -749,7 +749,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A17316_苦橙葉精油",
-    "image": "products/A17316.png"
+    "image": "products/A17316.jpg"
   },
   {
     "code": "A204",
@@ -765,7 +765,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A204_乳香薰衣草按摩精油",
-    "image": "products/A204.png"
+    "image": "products/A204.jpg"
   },
   {
     "code": "A2051",
@@ -781,7 +781,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2051_尤加利薄荷滾珠精油",
-    "image": "products/A2051.png"
+    "image": "products/A2051.jpg"
   },
   {
     "code": "A2052",
@@ -797,7 +797,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2052_薰衣草精油滾珠",
-    "image": "products/A2052.png"
+    "image": "products/A2052.jpg"
   },
   {
     "code": "A2053",
@@ -813,7 +813,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2053_茶樹精油滾珠",
-    "image": "products/A2053.png"
+    "image": "products/A2053.jpg"
   },
   {
     "code": "A2054",
@@ -829,7 +829,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2054_捍衛防護精油滾珠",
-    "image": "products/A2054.png"
+    "image": "products/A2054.jpg"
   },
   {
     "code": "A2055",
@@ -845,7 +845,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2055_極度放鬆精油滾珠",
-    "image": "products/A2055.png"
+    "image": "products/A2055.jpg"
   },
   {
     "code": "A2056",
@@ -861,7 +861,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2056_元氣舒涼精油滾珠",
-    "image": "products/A2056.png"
+    "image": "products/A2056.jpg"
   },
   {
     "code": "A2057",
@@ -877,7 +877,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2057_恬睡好眠精油滾珠",
-    "image": "products/A2057.png"
+    "image": "products/A2057.jpg"
   },
   {
     "code": "A2058",
@@ -893,7 +893,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2058_隨身救援精油滾珠",
-    "image": "products/A2058.png"
+    "image": "products/A2058.jpg"
   },
   {
     "code": "A2059",
@@ -909,7 +909,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2059_精神力精油滾珠",
-    "image": "products/A2059.png"
+    "image": "products/A2059.jpg"
   },
   {
     "code": "A205",
@@ -941,7 +941,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A2081_享放鬆精油滾珠",
-    "image": "products/A2081.png"
+    "image": "products/A2081.jpg"
   },
   {
     "code": "A39250",
@@ -957,7 +957,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A39250_藍膠尤加利精油A39005-A39050-A39100-A39200",
-    "image": "products/A39250.png"
+    "image": "products/A39250.jpg"
   },
   {
     "code": "A3980",
@@ -973,7 +973,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A3980_尤加利舒緩健康皂",
-    "image": "products/A3980.png"
+    "image": "products/A3980.jpg"
   },
   {
     "code": "A3988",
@@ -989,7 +989,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A3988_薰衣草亮白健康皂",
-    "image": "products/A3988.png"
+    "image": "products/A3988.jpg"
   },
   {
     "code": "A41025",
@@ -1005,7 +1005,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A41025_山金車油",
-    "image": "products/A41025.png"
+    "image": "products/A41025.jpg"
   },
   {
     "code": "A61100",
@@ -1021,7 +1021,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A61100_至尊薄荷精油A61050",
-    "image": "products/A61100.png"
+    "image": "products/A61100.jpg"
   },
   {
     "code": "A701",
@@ -1037,7 +1037,7 @@
     "notes": null,
     "category": "精油類",
     "folder": "A701_生薑活絡按摩精油",
-    "image": "products/A701.png"
+    "image": "products/A701.jpg"
   },
   {
     "code": "A9118",
@@ -1053,6 +1053,102 @@
     "notes": null,
     "category": "臉部保養",
     "folder": "A9118_玫瑰純露花水",
-    "image": "products/A9118.png"
+    "image": "products/A9118.jpg"
+  },
+  {
+    "code": "A559",
+    "series": "綿羊乳霜/精油/身體乳",
+    "fullName": "【澳維花園Aus Garden】柑橘舒活精油滾珠 10ml",
+    "shortName": "柑橘舒活精油滾珠",
+    "price": "NT$340",
+    "benefits": "提神醒腦瞬間見效、舒緩壓力焦慮、天然柑橘香氛、滾珠不沾手便攜使用",
+    "audience": "上班族、運動愛好者、壓力舒緩需求者、所有膚質、25~65歲全性別",
+    "ingredients": "甜橙精油、佛手柑、葡萄籽油",
+    "usage": "滾珠直接塗抹太陽穴、手腕內側、耳後等脈搏處；需要時重複使用，避免接觸眼睛",
+    "usp": "甜橙+佛手柑提神舒壓雙效、10ml輕巧隨身便攜、滾珠不沾手吸收快、無人工香料天然精油",
+    "notes": "敏感肌先局部試用；避免接觸眼睛；精油低燃點遠離火源；保存期限3年",
+    "category": "其他",
+    "folder": "",
+    "image": "products/A559.jpg"
+  },
+  {
+    "code": "A38100",
+    "series": "澳維花園大容量精油",
+    "fullName": "【澳維花園Aus Garden】茶樹精油 100ml",
+    "shortName": "茶樹精油100ml",
+    "price": "NT$1250",
+    "benefits": "100%純茶樹精油澳洲原裝進口居家淨化油脂平衡毛孔調理、清爽草本感空氣淨化天然清潔感",
+    "audience": "油性肌膚保養需求者、居家淨化族群、環境清潔需求者、25~65歲全性別",
+    "ingredients": "100%純茶樹精油（Melaleuca Alternifolia）",
+    "usage": "調和基礎油按摩、滴入保養品、薰香器3~5滴、泡澡沐浴、手心搓揉後嗅吸",
+    "usp": "澳洲原裝進口100%純茶樹精油、居家淨化+油脂平衡一瓶多用、100ml大容量高頻使用、清爽草本系人氣代表、NT$1250",
+    "notes": "自然植物萃取每批顏色略有差異；皮膚異常過敏請立即停用；孕婦嬰幼兒使用前諮詢；遠離火源 | 產地：澳洲 | NT$1,250",
+    "category": "其他",
+    "folder": "",
+    "image": "products/A38100.jpg"
+  },
+  {
+    "code": "A39100",
+    "series": "澳維花園大容量精油",
+    "fullName": "【澳維花園Aus Garden】頂級藍膠尤加利精油 100ml",
+    "shortName": "頂級藍膠尤加利精油100ml",
+    "price": "NT$890",
+    "benefits": "100%純藍膠尤加利精油澳洲原裝進口空氣淨化防螨芳香、居家深層清潔感清新俐落不甜膩",
+    "audience": "居家淨化需求者、防螨保護需求者、清新草本香調愛好者、25~65歲全性別",
+    "ingredients": "100%純藍膠尤加利精油（Eucalyptus Globulus）",
+    "usage": "調和基礎油按摩、滴入保養品、薰香器3~5滴、泡澡沐浴、手心搓揉後嗅吸",
+    "usp": "頂級藍膠尤加利空氣淨化防螨芳香澳洲進口、100ml大容量空間型使用、清新俐落草本氣息有存在感、NT$890",
+    "notes": "皮膚異常過敏請立即停用；孕婦嬰幼兒使用前諮詢；遠離火源 | 產地：澳洲 | NT$890",
+    "category": "其他",
+    "folder": "",
+    "image": "products/A39100.jpg"
+  },
+  {
+    "code": "A41030",
+    "series": "澳維花園大容量精油",
+    "fullName": "【澳維花園Aus Garden】山金車油 30ml",
+    "shortName": "山金車油",
+    "price": "NT$480",
+    "benefits": "山金車按摩油植物油質地溫暖好吸收、按摩刮痧舒緩放鬆肌膚潤澤、非香氛精油直接按摩使用",
+    "audience": "運動愛好者按摩保養需求者、刮痧愛好者、日常身體保養族群、25~65歲全性別",
+    "ingredients": "山金車油（Arnica Oil）、天然永久花",
+    "usage": "取適量塗抹肌膚後進行身體按摩或刮痧；可直接使用無需稀釋",
+    "usp": "山金車植物按摩油非香氛精油直接使用、溫暖好吸收延展性佳按摩刮痧皆適合、30ml日常身體保養、NT$480",
+    "notes": "自然植物萃取顏色略有差異；皮膚異常過敏請立即停用；孕婦嬰幼兒使用前諮詢；NT$480",
+    "category": "其他",
+    "folder": "",
+    "image": "products/A41030.jpg"
+  },
+  {
+    "code": "A69100",
+    "series": "澳維花園大容量精油",
+    "fullName": "【澳維花園Aus Garden】綠薄荷精油 100ml",
+    "shortName": "綠薄荷精油100ml",
+    "price": "NT$1280",
+    "benefits": "100%純綠薄荷精油甜美溫和薄荷調、提振精神恢復活力轉換心情、比一般薄荷更柔和耐聞",
+    "audience": "喜歡柔和薄荷香調者、提振轉換情緒需求者、居家常備香氛族群、25~65歲全性別",
+    "ingredients": "100%純綠薄荷精油（Mentha Spicata / Spearmint）",
+    "usage": "按摩調和基礎油；滴入保養品；薰香；泡澡沐浴；手心2~3滴搓揉後嗅吸",
+    "usp": "綠薄荷甜美溫和比一般薄荷更柔和耐聞、提振精神轉換情緒活力感、100ml大容量居家常備NT$1280",
+    "notes": "孕婦嬰幼兒使用前諮詢；遠離火源；30℃以下乾燥陰涼保存 | NT$1,280",
+    "category": "其他",
+    "folder": "",
+    "image": "products/A69100.jpg"
+  },
+  {
+    "code": "A61050",
+    "series": "澳維花園精油50ml/沐浴",
+    "fullName": "【澳維花園Aus Garden】至尊薄荷精油 50ml",
+    "shortName": "至尊薄荷精油",
+    "price": "NT$800",
+    "benefits": "清甜薄荷香強烈沁涼感存在感高、工作讀書開車提神醒神清新、有感系高辨識度清涼香氛",
+    "audience": "需要清涼提神者、上班族學生族駕駛族、清涼香氛愛好者、25~65歲全性別",
+    "ingredients": "100%至尊薄荷精油（Spearmint / Peppermint Premium Essential Oil）",
+    "usage": "擴香器3~5滴；可延伸口腔護理（依包裝說明）；調和基礎油外用按摩；手心搓開輕嗅",
+    "usp": "清甜薄荷強烈沁涼有感系高辨識度、工作讀書開車三大場景醒神、可搭迷迭香檸檬羅勒延伸配方、澳洲進口50ml NT$800",
+    "notes": "⚠️蠶豆症患者勿使用；孕婦嬰幼兒使用前諮詢；高濃度避免直接大量接觸肌膚；遠離火源 | NT$800",
+    "category": "其他",
+    "folder": "",
+    "image": "products/A61050.jpg"
   }
 ]

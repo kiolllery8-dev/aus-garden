@@ -46,8 +46,10 @@ for i, row in enumerate(ws.iter_rows(values_only=True)):
     if key not in folder_map:
         continue
     cat, path, folder_name = folder_map[key]
+    # prefer the full matched folder code (e.g. A33050) over truncated xlsx code (A330)
+    display_code = key if len(key) > len(code) else code
     products.append({
-        "code": code,
+        "code": display_code,
         "series": row[1],
         "fullName": row[2],
         "shortName": row[3],
