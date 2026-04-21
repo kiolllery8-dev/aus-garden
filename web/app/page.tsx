@@ -31,9 +31,17 @@ export default function HomePage() {
               <Link href="/products" className="btn btn-ghost">探索香氛商品</Link>
             </div>
           </div>
-          <div className="relative aspect-[4/5] rounded-3xl bg-gradient-to-br from-moss/30 via-sand to-clay/40 shadow-xl overflow-hidden">
-            <div className="absolute inset-0 flex items-end p-8 text-cream">
-              <div className="bg-forest/70 backdrop-blur rounded-2xl px-5 py-4">
+          <div className="relative aspect-[4/5] rounded-3xl bg-sand shadow-xl overflow-hidden">
+            <Image
+              src={`${BP}/hero/hero.jpg`}
+              alt="AUS GARDEN Signature Series"
+              fill
+              sizes="(max-width:768px) 100vw, 50vw"
+              priority
+              className="object-cover"
+            />
+            <div className="absolute inset-0 flex items-end p-8">
+              <div className="bg-forest/80 backdrop-blur rounded-2xl px-5 py-4 text-cream">
                 <p className="text-xs tracking-widest text-sand">SIGNATURE SERIES</p>
                 <p className="text-lg mt-1">森林書房・手工香氛</p>
               </div>
@@ -79,8 +87,15 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredCourses.map((c) => (
               <article key={c.slug} className="group bg-cream rounded-2xl overflow-hidden border hairline">
-                <div className={`aspect-[4/5] bg-gradient-to-br ${c.cover} flex items-end p-4`}>
-                  <span className="text-[11px] tracking-widest bg-cream/90 text-forest px-3 py-1 rounded-full">
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <Image
+                    src={`${BP}/courses/${c.slug}.jpg`}
+                    alt={c.title}
+                    fill
+                    sizes="(max-width:768px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition duration-500"
+                  />
+                  <span className="absolute top-4 left-4 text-[11px] tracking-widest bg-cream/90 text-forest px-3 py-1 rounded-full">
                     {c.category}
                   </span>
                 </div>
@@ -138,7 +153,15 @@ export default function HomePage() {
       {/* Brand Story Teaser */}
       <section className="bg-forest text-cream">
         <div className="container py-20 grid md:grid-cols-2 gap-12 items-center">
-          <div className="aspect-[5/4] rounded-3xl bg-gradient-to-br from-moss to-clay/70" />
+          <div className="relative aspect-[5/4] rounded-3xl overflow-hidden bg-sand">
+            <Image
+              src={`${BP}/hero/story.jpg`}
+              alt="Brand story"
+              fill
+              sizes="(max-width:768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
           <div>
             <p className="text-xs tracking-[0.4em] text-sand mb-4">BRAND STORY</p>
             <h2 className="text-3xl md:text-4xl">從一座花園，走進你的日常</h2>

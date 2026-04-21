@@ -1,3 +1,6 @@
+import Image from 'next/image';
+const BP = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const metadata = { title: '品牌故事｜AUS GARDEN 澳維花園' };
 
 export default function AboutPage() {
@@ -11,7 +14,9 @@ export default function AboutPage() {
       </section>
 
       <section className="container py-16 grid md:grid-cols-2 gap-12 items-start">
-        <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-moss/60 via-sand to-clay/50" />
+        <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand">
+          <Image src={`${BP}/hero/hero.jpg`} alt="AUS GARDEN" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+        </div>
         <div className="space-y-6 text-ink/80 leading-8">
           <p>
             AUS GARDEN 澳維花園，從一座充滿植物與香氣的小花園出發。
