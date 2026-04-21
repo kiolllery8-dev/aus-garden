@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "goldfishion-oem",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "D:/專案經理全自動AI/goldfishion-oem/web", "run", "dev", "--", "-p", "3001"],
+      "port": 3001
+    },
+    {
+      "name": "aus-garden",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "D:/專案經理全自動AI/aus-garden/web", "run", "dev", "--", "-p", "3000"],
+      "port": 3000
+    }
+  ]
+}
