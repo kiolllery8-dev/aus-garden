@@ -30,16 +30,13 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
 
-      - name: Detect repo name for basePath
-        id: repo
-        run: echo "name=${GITHUB_REPOSITORY##*/}" >> $GITHUB_OUTPUT
-
       - name: Install
         run: npm ci || npm install
 
       - name: Build (static export)
         env:
-          NEXT_PUBLIC_BASE_PATH: /${{ steps.repo.outputs.name }}
+          # Custom domain (CNAME file in public/) serves from root — no basePath
+          NEXT_PUBLIC_BASE_PATH: ''
         run: |
           npm run build
           touch out/.nojekyll
