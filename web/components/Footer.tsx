@@ -50,6 +50,21 @@ export default function Footer() {
           <span>Handcrafted with plants & scent.</span>
         </div>
       </div>
+      <div className="border-t border-cream/10 bg-forest/95">
+        <div className="container py-4 text-center text-xs text-sand/80">
+          網頁設計 by{' '}
+          <a
+            href="https://show.intelliverse.tw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cream underline underline-offset-2 hover:text-clay transition"
+          >
+            靈境智造 Intelliverse
+          </a>
+          <span className="mx-2 text-sand/40">·</span>
+          <span className="text-sand/90">讓 AI 幫你賺錢</span>
+        </div>
+      </div>
     </footer>
   );
 }
