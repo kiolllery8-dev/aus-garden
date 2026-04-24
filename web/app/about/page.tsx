@@ -1,7 +1,22 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
 const BP = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-export const metadata = { title: '品牌故事｜AUS GARDEN 澳維花園' };
+export const metadata: Metadata = {
+  title: '品牌故事｜AUS GARDEN 澳維花園 From the Garden, Into Your Life',
+  description:
+    'AUS GARDEN 澳維花園，從一座充滿植物與香氣的小花園出發。用雙手創作，用鼻子感受——香氛體驗工作坊、精油香氛商品、企業氣味藝術合作，結合 25 年創業輔導經驗的第四支柱諮詢服務。',
+  keywords: [
+    '品牌故事', 'AUS GARDEN', '澳維花園', 'About', 'Brand Story',
+    '台中香氛品牌', '身心靈', '芳療', '植物',
+  ],
+  alternates: { canonical: '/about/' },
+  openGraph: {
+    title: '品牌故事｜AUS GARDEN 澳維花園',
+    description: '從一座花園，走進你的日常。',
+    images: ['/hero/story.jpg'],
+  },
+};
 
 export default function AboutPage() {
   return (

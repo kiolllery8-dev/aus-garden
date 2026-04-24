@@ -1,8 +1,41 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import { courses, products, displayName, priceNumber } from '@/lib/data';
 
 const BP = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const SITE = 'https://ausgarden.intelliverse.tw';
+
+export const metadata = {
+  alternates: { canonical: '/' },
+};
+
+const homeFAQ = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'AUS GARDEN 澳維花園工作坊在哪裡？',
+      acceptedAnswer: { '@type': 'Answer', text: '台中市太平區精美路 122 號，客服時段週一至週五 10:00–18:00，電話 04-2275-2009。' },
+    },
+    {
+      '@type': 'Question',
+      name: '課程需要多久？有基礎限制嗎？',
+      acceptedAnswer: { '@type': 'Answer', text: '每堂 1.5–3 小時，由芳療師帶領，適合從初學到進階學員。所有課程皆為體驗型手作工作坊，不提供認證或證照。' },
+    },
+    {
+      '@type': 'Question',
+      name: '可以做企業 Team Building 或婚禮派對嗎？',
+      acceptedAnswer: { '@type': 'Answer', text: '可以。D 類企業客製工作坊支援 10–100 人客製香氛手作體驗，可依主題調整香調、包裝與品牌 Logo。請透過 LINE @auslife 洽詢。' },
+    },
+    {
+      '@type': 'Question',
+      name: '商品可以客製禮盒嗎？',
+      acceptedAnswer: { '@type': 'Answer', text: '可以。可依品牌調性客製包裝、刻字與香調搭配，歡迎透過 LINE @auslife 洽詢詳情。' },
+    },
+  ],
+};
 
 export default function HomePage() {
   const featuredCourses = courses.slice(0, 4);
@@ -13,6 +46,9 @@ export default function HomePage() {
 
   return (
     <>
+      <Script id="ld-home-faq" type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFAQ) }} />
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sand via-cream to-moss/20" aria-hidden />

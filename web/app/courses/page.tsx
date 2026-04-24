@@ -4,7 +4,28 @@ import { courses } from '@/lib/data';
 
 const BP = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-export const metadata = { title: '手作課程｜AUS GARDEN 澳維花園' };
+import Script from 'next/script';
+import type { Metadata } from 'next';
+
+const SITE = 'https://ausgarden.intelliverse.tw';
+
+export const metadata: Metadata = {
+  title: '手作香氛課程｜蠟燭 DIY・精油調香・冷製皂・沐浴球｜台中太平',
+  description:
+    'AUS GARDEN 澳維花園 9 大手作香氛體驗工作坊：容器蠟燭、大豆蠟進階、個人香水調製、居家擴香、天然護膚油、開運香氣水晶香水、香氛沐浴球、冷製手工皂、固體香膏。台中太平實體課程，1.5–3 小時完成。企業 Team Building、婚禮派對、品牌活動客製。',
+  keywords: [
+    '手作課程', '香氛工作坊', '調香工作坊', '蠟燭 DIY', '精油課程',
+    '冷製皂課程', '手工皂課程', '沐浴球手作', '固體香水', '個人香水',
+    '台中手作', '太平手作', 'Team Building', '婚禮小物 DIY', '香氛體驗',
+    'AUS GARDEN', '澳維花園',
+  ],
+  alternates: { canonical: '/courses/' },
+  openGraph: {
+    title: '手作香氛課程｜AUS GARDEN 澳維花園',
+    description: '9 大香氛體驗手作工作坊，台中太平實體課程。',
+    images: ['/courses/personal-perfume.jpg'],
+  },
+};
 
 const categories = [
   { key: 'A', label: 'A · 蠟燭系列' },
@@ -12,9 +33,48 @@ const categories = [
   { key: 'C', label: 'C · 生活手作' },
 ];
 
+const SITE_URL = 'https://ausgarden.intelliverse.tw';
+
 export default function CoursesPage() {
+  const courseLd = {
+    '@context': 'https://schema.org',
+    '@graph': courses.map((c) => ({
+      '@type': 'Course',
+      name: c.title,
+      description: c.desc,
+      provider: { '@type': 'Organization', name: 'AUS GARDEN 澳維花園', sameAs: SITE_URL },
+      offers: {
+        '@type': 'Offer',
+        price: c.priceFrom,
+        priceCurrency: 'TWD',
+        availability: 'https://schema.org/InStock',
+      },
+      hasCourseInstance: {
+        '@type': 'CourseInstance',
+        courseMode: 'onsite',
+        duration: c.duration,
+        location: {
+          '@type': 'Place',
+          name: 'AUS GARDEN 澳維花園工作坊',
+          address: '台中市太平區精美路 122 號',
+        },
+      },
+    })),
+  };
+  const breadLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${SITE_URL}/` },
+      { '@type': 'ListItem', position: 2, name: '手作課程', item: `${SITE_URL}/courses/` },
+    ],
+  };
   return (
     <>
+      <Script id="ld-courses" type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseLd) }} />
+      <Script id="ld-courses-bc" type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadLd) }} />
       <section className="bg-sand/60">
         <div className="container py-20">
           <p className="text-xs tracking-[0.4em] text-moss mb-4">WORKSHOPS</p>

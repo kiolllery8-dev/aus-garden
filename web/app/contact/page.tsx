@@ -1,4 +1,20 @@
-export const metadata = { title: '聯絡我們｜AUS GARDEN 澳維花園' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '聯絡我們｜預約課程・企業合作｜AUS GARDEN 澳維花園',
+  description:
+    'AUS GARDEN 澳維花園聯絡資訊｜台中市太平區精美路 122 號 ｜客服 04-2275-2009 ｜LINE @auslife ｜信箱 salesgoldfishion@gmail.com ｜預約手作課程、企業 Team Building 客製、婚禮派對、商品禮盒詢問。',
+  keywords: [
+    '聯絡 AUS GARDEN', '預約課程', '企業合作', '台中香氛', 'LINE auslife',
+    '太平香氛工作坊', '婚禮小物客製', 'Team Building',
+  ],
+  alternates: { canonical: '/contact/' },
+  openGraph: {
+    title: '聯絡我們｜AUS GARDEN 澳維花園',
+    description: '預約課程・企業洽詢・LINE @auslife',
+    images: ['/hero/hero.jpg'],
+  },
+};
 
 export default function ContactPage() {
   return (

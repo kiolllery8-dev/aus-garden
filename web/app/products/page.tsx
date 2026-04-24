@@ -1,6 +1,8 @@
 'use client';
+// Client component — metadata for this route handled via app/products/layout.tsx
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { products, displayName, priceNumber, productCategories } from '@/lib/data';
 
 const BP = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -62,40 +64,39 @@ export default function ProductsPage() {
             const price = priceNumber(p);
             const name = displayName(p);
             return (
-              <article key={p.code} className="group bg-white rounded-2xl overflow-hidden border hairline hover:shadow-lg transition">
-                <div className="relative aspect-square bg-gradient-to-br from-sand/60 via-cream to-cream">
-                  {p.image ? (
-                    <Image
-                      src={`${BP}/${p.image}`}
-                      alt={name}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                      className="object-contain p-4 group-hover:scale-105 transition duration-500"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-sand to-moss/20 text-forest text-xs tracking-widest">
-                      AUS GARDEN
-                    </div>
-                  )}
-                </div>
-                <div className="p-4">
-                  <p className="text-[10px] tracking-widest text-clay">{p.code}</p>
-                  <h3 className="mt-1 text-sm md:text-base text-forest leading-tight line-clamp-2 min-h-[2.75em]">
-                    {name}
-                  </h3>
-                  <div className="mt-3 flex items-center justify-between">
-                    <span className="text-sm text-moss">
-                      {price ? `NT$ ${price.toLocaleString()}` : '洽詢'}
-                    </span>
-                    <a
-                      href="https://line.me/R/ti/p/@auslife"
-                      className="text-[11px] tracking-widest text-forest hover:underline"
-                    >
-                      詢問 →
-                    </a>
+              <Link key={p.code} href={`/products/${p.code}`} className="group bg-white rounded-2xl overflow-hidden border hairline hover:shadow-lg transition block">
+                <article>
+                  <div className="relative aspect-square bg-gradient-to-br from-sand/60 via-cream to-cream">
+                    {p.image ? (
+                      <Image
+                        src={`${BP}/${p.image}`}
+                        alt={`${name} - AUS GARDEN 澳維花園 ${p.series || ''}`}
+                        fill
+                        sizes="(max-width: 768px) 50vw, 25vw"
+                        className="object-contain p-4 group-hover:scale-105 transition duration-500"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-sand to-moss/20 text-forest text-xs tracking-widest">
+                        AUS GARDEN
+                      </div>
+                    )}
                   </div>
-                </div>
-              </article>
+                  <div className="p-4">
+                    <p className="text-[10px] tracking-widest text-clay">{p.code}</p>
+                    <h3 className="mt-1 text-sm md:text-base text-forest leading-tight line-clamp-2 min-h-[2.75em]">
+                      {name}
+                    </h3>
+                    <div className="mt-3 flex items-center justify-between">
+                      <span className="text-sm text-moss">
+                        {price ? `NT$ ${price.toLocaleString()}` : '洽詢'}
+                      </span>
+                      <span className="text-[11px] tracking-widest text-forest group-hover:underline">
+                        查看詳情 →
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </Link>
             );
           })}
         </div>
